@@ -1,0 +1,9 @@
+.item__main {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 21px;
+    padding-right: 15px;
+    padding-bottom: 31px;
+    padding-top: 25px;
+    align-items: center;
+}

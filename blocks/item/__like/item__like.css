@@ -1,0 +1,9 @@
+.item__like {
+    width: 22px;
+    height: 19px;
+    }
+
+.item__like:hover {
+    opacity: 0.6;
+    transition: opacity 0.5s ease-out;
+}

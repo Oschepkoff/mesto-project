@@ -1,0 +1,11 @@
+.item {
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 282px;
+    height: 361px;
+    background-color: #fff;
+    row-gap: 0;
+}
