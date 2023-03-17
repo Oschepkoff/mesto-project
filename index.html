@@ -9,84 +9,96 @@
     <title>Mesto Russia</title>
 </head>
 
-<body class="bgcolor">
-    <div class="page">
-        <header class="header">
-            <img class="header__logo" src="./images/logo.svg" alt="Логотип Mesto Russia">
-        </header>
-        <main>
-            <section class="profile">
-                <div class="profile__block">
-                    <img class="profile__avatar" src="./images/avatar.jpg" alt="Фото Жак-Ив Кусто">
-                    <div class="profile__info">
-                        <h1 class="profile__name">Жак-Ив Кусто</h1>
-                        <button class="profile__edit" type="button"></button>
-                        <p class="profile__description">Исследователь океана</p>
-                    </div>
+<body class="page">
+
+    <header class="header">
+        <img class="header__logo" src="./images/logo.svg" alt="Логотип Mesto Russia">
+    </header>
+    <main>
+        <section class="profile">
+            <div class="profile__block">
+                <img class="profile__avatar" src="./images/avatar.jpg" alt="Фото Жак-Ив Кусто">
+                <div class="profile__info">
+                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                    <button class="profile__edit" type="button"></button>
+                    <p class="profile__description">Исследователь океана</p>
                 </div>
-                <div class="profile__add-button"></div>
-            </section>
-            <section class="elements">
-                <div class="item">
-                    <img class="item__pic" src="./images/erebor.jpg" alt="Гора Эребор">
-                    <div class="item__main">
-                        <h2 class="item__title">Гора Эребор</h2>
-                        <img class="item__like" src="./images/like.svg" alt="Сердечко Like">
-                    </div>
+            </div>
+            <button class="profile__add-button" type="button"></button>
+        </section>
+        <section class="elements">
+            <div class="item">
+                <img class="item__pic" src="./images/erebor.jpg" alt="Гора с дворцом в ней и деревней рядом">
+                <div class="item__main">
+                    <h2 class="item__title">Гора Эребор</h2>
+                    <button type="button" class="item__like-button"><img class="item__like" src="./images/like.svg"
+                            alt="Сердечко Like"></button>
                 </div>
-                <div class="item">
-                    <img class="item__pic" src="./images/hogwarts.jpg" alt="Замок Хогвардс">
-                    <div class="item__main">
-                        <h2 class="item__title">Замок Хогвардс</h2>
-                        <img class="item__like" src="./images/like.svg" alt="Сердечко Like">
-                    </div>
+            </div>
+            <div class="item">
+                <img class="item__pic" src="./images/hogwarts.jpg" alt="Замок на фоне неба">
+                <div class="item__main">
+                    <h2 class="item__title">Замок Хогвардс</h2>
+                    <button type="button" class="item__like-button"><img class="item__like" src="./images/like.svg"
+                            alt="Сердечко Like"></button>
                 </div>
-                <div class="item">
-                    <img class="item__pic" src="./images/hobbit.jpg" alt="Вид на Хоббитон">
-                    <div class="item__main">
-                        <h2 class="item__title">Хоббитон</h2>
-                        <img class="item__like" src="./images/like.svg" alt="Сердечко Like">
-                    </div>
+            </div>
+            <div class="item">
+                <img class="item__pic" src="./images/hobbit.jpg"
+                    alt="Вид на зеленый холм с деревьями и домиками внутри холма">
+                <div class="item__main">
+                    <h2 class="item__title">Хоббитон</h2>
+                    <button type="button" class="item__like-button"><img class="item__like" src="./images/like.svg"
+                            alt="Сердечко Like"></button>
                 </div>
-                <div class="item">
-                    <img class="item__pic" src="./images/rivendell.jpg" alt="Королевство Ривенделл">
-                    <div class="item__main">
-                        <h2 class="item__title">Ривенделл</h2>
-                        <img class="item__like" src="./images/like.svg" alt="Сердечко Like">
-                    </div>
+            </div>
+            <div class="item">
+                <img class="item__pic" src="./images/rivendell.jpg" alt="Городок в горах со стекающими водопадами">
+                <div class="item__main">
+                    <h2 class="item__title">Ривенделл</h2>
+                    <button type="button" class="item__like-button"><img class="item__like" src="./images/like.svg"
+                            alt="Сердечко Like"></button>
                 </div>
-                <div class="item">
-                    <img class="item__pic" src="./images/new-zeland.jpg" alt="Вид сверху на зеленые острова">
-                    <div class="item__main">
-                        <h2 class="item__title">Новая Зеландия</h2>
-                        <img class="item__like" src="./images/like.svg" alt="Сердечко Like">
-                    </div>
+            </div>
+            <div class="item">
+                <img class="item__pic" src="./images/new-zeland.jpg" alt="Вид сверху на зеленые острова">
+                <div class="item__main">
+                    <h2 class="item__title">Новая Зеландия</h2>
+                    <button type="button" class="item__like-button"><img class="item__like" src="./images/like.svg"
+                            alt="Сердечко Like"></button>
                 </div>
-                <div class="item">
-                    <img class="item__pic" src="./images/Llanfairpwllgwyngyll.jpg" alt="фото ЖД вокзала">
-                    <div class="item__main">
-                        <h2 class="item__title">Деревня Лланвайр-Пуллгуингилл</h2>
-                        <img class="item__like" src="./images/like.svg" alt="Сердечко Like">
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <p class="footer__text">© 2023 Mesto Russia</p>
-        </footer>
-        <!-- Для включения модального окна необходимо подключить модификтор popup_opened-->
-        <section class="popup">
-            <div class="popup__container">
-                <button class="popup__close"></button>
-                <div class="popup__edit">
-                    <h2 class="popup__title">Редактировать профиль</h2>
-                    <input class="popup__text" type="text" name="name" value="Жак-Ив Кусто" required>
-                    <input class="popup__text" type="text" name="description" value="Исследователь океана" required>
-                    <button class="popup__button-save" type="button">Сохранить</button>
+            </div>
+            <div class="item">
+                <img class="item__pic" src="./images/Llanfairpwllgwyngyll.jpg" alt="фото ЖД вокзала">
+                <div class="item__main">
+                    <h2 class="item__title">Деревня Лланвайр-Пуллгуингилл</h2>
+                    <button type="button" class="item__like-button"><img class="item__like" src="./images/like.svg"
+                            alt="Сердечко Like"></button>
                 </div>
             </div>
         </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">© 2023 Mesto Russia</p>
+    </footer>
+    <!-- Для включения модального окна необходимо подключить модификтор popup_opened-->
+    <div class="popup popup_opened">
+        <div class="popup__container">
+            <button type="button" class="popup__close"></button>
+            <div class="popup__edit">
+                <h2 class="popup__title">Редактировать профиль</h2>
+                <form class="popup__form" name="profile-edit">
+                    <fieldset class="popup__input-container">
+                    <input class="popup__text" type="text" name="name" value="Жак-Ив Кусто" placeholder="Имя" required>
+                    <input class="popup__text" type="text" name="description" value="Исследователь океана"
+                        placeholder="О себе" required>
+                    </fieldset>
+                    <button class="popup__button-save" type="submit">Сохранить</button>
+                </form>
+            </div>
+        </div>
     </div>
+
 </body>
 
 </html>
