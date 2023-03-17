@@ -3,11 +3,14 @@
     max-width: 336px;
     display: grid;
     grid-template-columns: 1fr 24px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     column-gap: 18px;
     row-gap: 8px;
     align-items: center;
     align-self: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 879px) {
@@ -17,5 +20,6 @@
         row-gap: 10px;
         grid-template-columns: 1fr 18px;
         text-align: center;
+        padding-bottom: 30px;
     }
   }
