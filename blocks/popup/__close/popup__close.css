@@ -5,7 +5,7 @@
     background-size: contain;
     position: absolute;
     top: -40px;
-    left: 438px;
+    right: -40px;
     width: 32px;
     height: 32px;
     border: 0;
@@ -23,6 +23,6 @@
         width: 20px;
         height: 20px;
         top: -36px;
-        left: 262px;
+        right: 0;
     }
   }
