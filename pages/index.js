@@ -5,6 +5,7 @@ const popupProfile = document.querySelector('.popup-profile');                  
 const buttonClosePopupProfile = popupProfile.querySelector('.popup__close');    //кнопка закрытия попапа редактирования профиля
 const inputNameFormProfile = popupProfile.querySelector('#name');               //имя профиля в попапе
 const inputDescriptionFormProfile = popupProfile.querySelector('#description'); //описание профиля в попапе
+const formProfile = popupProfile.querySelector('.popup__form')                  //форма попапа профиля
 //секция профиля
 const proFile = document.querySelector('.profile');
 const buttonOpenPopupProfile = proFile.querySelector('.profile__edit');         //кнопка редактирования профиля
@@ -20,6 +21,7 @@ const popupPlace = document.querySelector('.popup-place');                      
 const buttonClosePopupPlace = popupPlace.querySelector('.popup__close');        //кнопка закрытия попапа добавления карточки
 const inputNameFormAddNewCard = popupPlace.querySelector('#placeName');         //имя в попапе карточки
 const inputUrlFormAddNewCard = popupPlace.querySelector('#url');                //ссылка в попапе карточки
+const formPlace = popupPlace.querySelector('.popup__form');                     //форма попапа карточки
 //кнопка открытия попапа добавления карточки
 const buttonOpenPopupPlace = document.querySelector('.profile__add-button');            
 //попап открытия картинки
@@ -60,35 +62,7 @@ function formSubmitProfile(evt) {
 }
 
 //Слушатель Submit редактирование профиля
-popupProfile.addEventListener('submit', formSubmitProfile);
-
-//Массив из 6 карточек
-const initialCards = [
-  {
-    name: 'Архыз',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
-  },
-  {
-    name: 'Челябинская область',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
-  },
-  {
-    name: 'Иваново',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
-  },
-  {
-    name: 'Камчатка',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
-  },
-  {
-    name: 'Холмогорский район',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
-  },
-  {
-    name: 'Байкал',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
-  }
-];
+formProfile.addEventListener('submit', formSubmitProfile);
 
 //Вызов карточек
 initialCards.forEach(function (element) {
@@ -145,7 +119,7 @@ function addCard() {
 }
 
 //Слушатель submit добавление карточки
-popupPlace.addEventListener('submit', formSubmitPlace);
+formPlace.addEventListener('submit', formSubmitPlace);
 
 //Функция Submit добавления карточки
 function formSubmitPlace(evt) {
@@ -218,3 +192,34 @@ function closePopupImage() {
 
 //Слушатель закрытия попапа добавления карточки
 buttonClosePopupImage.addEventListener('click', closePopupImage); 
+
+/*
+//
+const createCard = (data) => {
+  const cardElement = cardTemplate.cloneNode(true);
+  const likeButton = cardElement.querySelector('.card__like-button');
+//...
+  likeButton.addEventListener('click', handleLikeIcon);
+  deleteButton.addEventListener('click', handleDeleteCard);
+  cardImage.addEventListener('click', () => handlePreviewPicture(data));
+  // До вставки в разметку добавляем слушатели событий.
+  return cardElement;
+};
+
+//функция, которая отвечает за вставку карточки
+const renderCard = (data, wrap) => {
+  wrap.prepend(createCard(data));
+};
+
+//функция обработчик по событию submit формы добавления новой карточки
+const handleCardFormSubmit = (evt) => {
+  evt.preventDefault();
+  renderCard(//...);
+//закрываем попап, очищаем фому
+};
+
+//переиспользуем функцию для массива изначальных карточек
+initialCards.forEach((data) => {
+  renderCard(data, placesWrap)
+}); 
+*/
